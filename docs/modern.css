@@ -50,6 +50,7 @@ body.twoColElsLtHdr {
 
 /* ---------- header (keeps the logo image) ---------- */
 .twoColElsLtHdr #header {
+  position: relative;
   height: 150px !important;
   background-image: url(images/jules_entertainment10.png) !important;
   background-repeat: no-repeat !important;
@@ -58,6 +59,13 @@ body.twoColElsLtHdr {
   border-bottom: 1px solid var(--line) !important;
   box-shadow: inset 0 -3px 0 0 var(--gold-soft);
   background-color: #fffdf7 !important;
+}
+.twoColElsLtHdr #header a.jm-logo-link {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* ---------- sidebar nav ---------- */
