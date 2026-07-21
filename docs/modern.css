@@ -1,0 +1,272 @@
+/* ============================================================
+   Julie Metz — modern refresh
+   Keeps the original cream + gold palette and the logo header;
+   restyles the existing structure for a cleaner, modern layout.
+   Loaded after each page's inline CSS so it overrides it.
+   ============================================================ */
+
+:root {
+  --cream:      #fbf6e9;
+  --paper:      #fffdf6;
+  --panel:      #fbf7ec;
+  --line:       #e7dcc0;
+  --gold:       #b29649;
+  --gold-dark:  #8a7331;
+  --gold-soft:  #d8c48a;
+  --ink:        #2c2b27;
+  --muted:      #6f6a5c;
+  --blue:       #2f437a;   /* echoes the logo lettering */
+  --blue-link:  #34528f;
+  --shadow:     0 10px 30px rgba(75, 62, 27, .10);
+  --shadow-sm:  0 3px 10px rgba(75, 62, 27, .10);
+}
+
+/* ---------- base ---------- */
+body.twoColElsLtHdr {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  font-size: 16px !important;
+  color: var(--ink);
+  line-height: 1.65;
+  background-image: none !important;
+  background-color: #f3ecd8 !important;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #fbf6e9 0%, #efe6cf 55%, #e9dfc4 100%) fixed !important;
+  padding: 32px 18px !important;
+  margin: 0 !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- container / card ---------- */
+.twoColElsLtHdr #container {
+  width: 100% !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  background: var(--paper) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow) !important;
+  overflow: hidden;
+}
+
+/* ---------- header (keeps the logo image) ---------- */
+.twoColElsLtHdr #header {
+  height: 150px !important;
+  background-image: url(images/jules_entertainment10.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 28px center !important;
+  background-size: auto 74% !important;
+  border-bottom: 1px solid var(--line) !important;
+  box-shadow: inset 0 -3px 0 0 var(--gold-soft);
+  background-color: #fffdf7 !important;
+}
+
+/* ---------- sidebar nav ---------- */
+.twoColElsLtHdr #sidebar1 {
+  float: left !important;
+  width: 210px !important;
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 28px 18px 28px 22px !important;
+  background: linear-gradient(180deg, #fbf7ec, #f6efdc) !important;
+  border-right: 1px solid var(--line);
+}
+.twoColElsLtHdr #sidebar1 table,
+.twoColElsLtHdr #sidebar1 tbody,
+.twoColElsLtHdr #sidebar1 tr,
+.twoColElsLtHdr #sidebar1 td {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.twoColElsLtHdr #sidebar1 td { margin: 0 0 9px 0 !important; }
+.twoColElsLtHdr #sidebar1 a {
+  display: block;
+  max-width: 170px;
+  margin: 0 auto;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+.twoColElsLtHdr #sidebar1 a img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  border: 0 !important;
+}
+.twoColElsLtHdr #sidebar1 a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(75, 62, 27, .20);
+  filter: saturate(1.05);
+}
+.twoColElsLtHdr #sidebar1 p { text-align: center; }
+.twoColElsLtHdr #sidebar1 img[src*="violin_pict"] {
+  margin-top: 22px !important;
+  width: 78% !important;
+  height: auto !important;
+  opacity: .9;
+  filter: drop-shadow(0 4px 8px rgba(75,62,27,.18));
+}
+
+/* ---------- main content ---------- */
+.twoColElsLtHdr #mainContent {
+  margin: 0 !important;
+  padding: 40px 46px 48px !important;
+  overflow: hidden;                 /* contain floats */
+  text-align: left !important;
+}
+
+/* neutralize the old fixed table dimensions used for layout */
+.twoColElsLtHdr #mainContent table {
+  width: auto !important;
+  max-width: 880px !important;      /* comfortable reading / content column */
+  height: auto !important;
+  margin: 0 auto !important;
+  border-collapse: collapse;
+  float: none !important;
+}
+.twoColElsLtHdr #mainContent td {
+  width: auto !important;
+  height: auto !important;
+  vertical-align: top;
+}
+
+/* typography */
+.twoColElsLtHdr #mainContent,
+.twoColElsLtHdr #mainContent p,
+.twoColElsLtHdr #mainContent td,
+.twoColElsLtHdr #mainContent span,
+.twoColElsLtHdr #mainContent font,
+.twoColElsLtHdr #mainContent li,
+.twoColElsLtHdr #mainContent div {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif !important;
+  color: var(--ink);
+}
+.twoColElsLtHdr #mainContent p {
+  font-size: 16px !important;
+  line-height: 1.72 !important;
+  margin: 0 0 16px 0 !important;
+  text-align: left !important;
+}
+.twoColElsLtHdr #mainContent h1,
+.twoColElsLtHdr #mainContent h2,
+.twoColElsLtHdr #mainContent h3,
+.twoColElsLtHdr #mainContent .style18,
+.twoColElsLtHdr #mainContent .style11,
+.twoColElsLtHdr #mainContent .style1 span {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  color: var(--blue) !important;
+  font-weight: 600 !important;
+  letter-spacing: .2px;
+  line-height: 1.15;
+}
+.twoColElsLtHdr #mainContent h1 { font-size: 2.4rem !important; margin: 0 0 .4em !important; }
+.twoColElsLtHdr #mainContent h2 { font-size: 1.9rem !important; margin: 0 0 .4em !important; }
+.twoColElsLtHdr #mainContent .style18 { font-size: 2.2rem !important; }
+.twoColElsLtHdr #mainContent .style11 { font-size: 1.7rem !important; }
+
+/* links */
+.twoColElsLtHdr #mainContent a {
+  color: var(--blue-link) !important;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-soft);
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.twoColElsLtHdr #mainContent a:hover {
+  color: var(--gold-dark) !important;
+  border-bottom-color: var(--gold-dark);
+}
+
+/* content images: soften + make responsive */
+.twoColElsLtHdr #mainContent img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+}
+/* the biography portrait floats nicely */
+.twoColElsLtHdr #mainContent img[src*="juliebio"] {
+  float: left;
+  margin: 4px 26px 14px 0 !important;
+  border: 4px solid #fff;
+}
+/* title-strip PNGs (resume/articles/lectures headings) shouldn't get a card look */
+.twoColElsLtHdr #mainContent img[src*="_title"],
+.twoColElsLtHdr #mainContent img[src*="titrle"],
+.twoColElsLtHdr #mainContent img[src*="resume_title"] {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* lists of links → tidy, roomy */
+.twoColElsLtHdr #mainContent ul { padding-left: 1.1em; }
+.twoColElsLtHdr #mainContent li { margin: .35em 0; }
+
+/* slideshow frame on the home page */
+.twoColElsLtHdr #fadeshow1 {
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+/* the three home-page thumbnails as a neat card column */
+.twoColElsLtHdr #mainContent img[usemap],
+.twoColElsLtHdr #mainContent a img[src*="strings_r_us"],
+.twoColElsLtHdr #mainContent img[src*="side_pict"] {
+  border-radius: 12px;
+}
+
+/* embedded Flash placeholders (dead in modern browsers) get a gentle frame */
+.twoColElsLtHdr #mainContent embed {
+  border-radius: 10px;
+  background: #efe7d2;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- footer ---------- */
+.twoColElsLtHdr #footer {
+  clear: both;
+  background: linear-gradient(180deg, #f6efdc, #f1e8d0) !important;
+  border-top: 1px solid var(--line) !important;
+  padding: 22px 20px !important;
+  text-align: center !important;
+}
+.twoColElsLtHdr #footer p,
+.twoColElsLtHdr #footer .style1 {
+  color: var(--muted) !important;
+  font-size: 13px !important;
+  font-family: "Inter", sans-serif !important;
+  margin: 0 !important;
+  line-height: 1.7;
+}
+.twoColElsLtHdr #footer a {
+  color: var(--gold-dark) !important;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-soft);
+}
+.twoColElsLtHdr #footer img[src*="vcss"] { display: none; }   /* hide the old W3C badge */
+
+/* ---------- responsive ---------- */
+@media (max-width: 820px) {
+  body.twoColElsLtHdr { padding: 14px 10px !important; }
+  .twoColElsLtHdr #container { border-radius: 12px !important; }
+  .twoColElsLtHdr #header {
+    height: 104px !important;
+    background-position: center !important;
+    background-size: auto 58% !important;
+  }
+  .twoColElsLtHdr #sidebar1 {
+    float: none !important;
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 16px !important;
+  }
+  .twoColElsLtHdr #sidebar1 table { max-width: 340px; margin: 0 auto !important; }
+  .twoColElsLtHdr #sidebar1 a { max-width: 300px; }
+  .twoColElsLtHdr #sidebar1 img[src*="violin_pict"] { display: none !important; }
+  .twoColElsLtHdr #mainContent { padding: 24px 20px 30px !important; }
+  .twoColElsLtHdr #mainContent img[src*="juliebio"] { float: none; display: block; margin: 0 auto 16px !important; }
+  .twoColElsLtHdr #mainContent h1 { font-size: 2rem !important; }
+}
