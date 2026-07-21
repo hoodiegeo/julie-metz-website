@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LLesson Plan pg 4</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	padding-top: 15px;
+	background-image: url(images/4background.gif);
+	background-repeat: repeat;
+	background-color: #FFFFFF;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.twoColElsLtHdr #container {
+	width: 57em;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 4px ridge #b29649;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	background: #fffded;
+} 
+.twoColElsLtHdr #header {
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height: 130px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-image: url(images/jules_entertainment10.png);
+	border-bottom: 3px ridge #b29649;
+} 
+.twoColElsLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
+*/
+.twoColElsLtHdr #sidebar1 {
+	float: left;
+	width: 11em; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+	padding-left: 15px;
+	margin-top: 15px;
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsLtHdr #mainContent {
+	margin: 0 1.5em 0 14em;
+	margin-top: 30px;
+} 
+.twoColElsLtHdr #footer {
+	padding: 0 10px;
+} 
+.twoColElsLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsLtHdr #sidebar1 { padding-top: 30px; }
+.twoColElsLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 90%;
+}
+.style1 {
+	font-size: 11px
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body class="twoColElsLtHdr" onload="MM_preloadImages('buttons/jewelry_down.gif','buttons/contactus_down.gif','btn2/violin_gram_down.gif','btn2/home_down.gif','btn2/bio_down.gif','btn2/resume_down.gif','btn2/jules_down.gif','btn2/education_down.gif','btn2/jewelry_down.gif','btn2/contactus_down.gif','btn2/lectures_down.gif','btn2/articles_down.gif')">
+
+<div id="container">
+  <div id="header">
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="152" height="251" align="center">
+     <tr>
+        <td height="25"><div align="center"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','btn2/home_down.gif',1)"><img src="btn2/home_up.gif" alt="Home Page" name="Image12" width="140" height="23" border="0" id="Image12" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="bio.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','btn2/bio_down.gif',1)"><img src="btn2/bio_up.gif" alt="Biography" name="Image13" width="140" height="23" border="0" id="Image13" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="resume.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','btn2/resume_down.gif',1)"><img src="btn2/resume_up.gif" alt="Resume Page" name="Image14" width="140" height="23" border="0" id="Image14" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="resume.html#recordings" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image20','','btn2/music_down.gif',1)"><img src="btn2/music_up.gif" alt="My Musical Selections" name="Image20" width="140" height="23" border="0" id="Image20" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="jules.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','btn2/jules_down.gif',1)"><img src="btn2/jules_up.gif" alt="Jules Entertainment" name="Image15" width="140" height="23" border="0" id="Image15" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="education.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','btn2/education_down.gif',1)"><img src="btn2/education_up.gif" alt="Education" name="Image16" width="140" height="23" border="0" id="Image16" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="violin.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','btn2/violin_gram_down.gif',1)"><img src="btn2/violin_gram_up.gif" alt="Violin Gram" name="Image11" width="140" height="23" border="0" id="Image11" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="articles.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','btn2/articles_down.gif',1)"><img src="btn2/articles_up.gif" alt="articles" name="Image19" width="140" height="23" border="0" id="Image19" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="lectures.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image18','','btn2/lectures_down.gif',1)"><img src="btn2/lectures_up.gif" alt="Lectures" name="Image18" width="140" height="23" border="0" id="Image18" /></a></div></td>
+      </tr>
+
+      <tr>
+        <td height="25"><div align="center"><a href="contactus2.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','btn2/contactus_down.gif',1)"><img src="btn2/contactus_up.gif" alt="Contact Us" name="Image10" width="140" height="23" border="0" id="Image10" /></a></div></td>
+      </tr>
+
+    </table>
+    <p align="center"><br />
+      <br />
+      <br />
+      <img src="images/violin_pict.png" alt="Violin" width="126" height="73" /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </p>
+  </div>
+  <div id="mainContent">
+    <table width="540" height="75">
+      <tr>
+        <td height="31"><div align="left"><img src="images/the_blues_pg4.png" width="533" height="906" border="0" usemap="#Map2" /></div></td>
+      </tr>
+    </table>
+  </div>
+  <br class="clearfloat" />
+   <div id="footer">
+    <p align="center" class="style1">Copyright &copy; 2011 Jules Entertainment <br />
+    </p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+
+
+<map name="Map" id="Map"><area shape="rect" coords="23,554,132,570" href="lesson_plan.html" />
+<area shape="rect" coords="138,552,243,570" href="lesson_plan2.html" />
+<area shape="rect" coords="248,554,360,570" href="lesson_plan3.html" />
+</map>
+<map name="Map2" id="Map2"><area shape="rect" coords="34,876,143,895" href="lesson_plan.html" />
+<area shape="rect" coords="149,876,247,895" href="lesson_plan2.html" />
+<area shape="rect" coords="256,877,355,895" href="lesson_plan3.html" />
+<area shape="rect" coords="361,875,461,896" href="lesson_plan4.html" />
+<area shape="rect" coords="19,618,122,636" href="http://www.bluesforpeace.com/music.htm" />
+<area shape="rect" coords="22,637,451,653" href="http://cascadeblues.org" />
+<area shape="rect" coords="18,655,112,667" href="http://www.redhotjazz.com " />
+<area shape="rect" coords="14,671,199,687" href="http://www.heptune.com" />
+</map></body>
+</html>
