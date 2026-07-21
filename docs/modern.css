@@ -204,6 +204,10 @@ body.twoColElsLtHdr {
 .twoColElsLtHdr #mainContent li { margin: .35em 0; }
 
 /* slideshow frame on the home page */
+.twoColElsLtHdr #fadeshow1,
+.twoColElsLtHdr #fadeshow1 .gallerylayer {
+  background: #fdf7e6 !important;   /* matches the cream matte baked into the slides */
+}
 .twoColElsLtHdr #fadeshow1 {
   border-radius: 12px;
   box-shadow: var(--shadow);
