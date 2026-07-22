@@ -330,3 +330,11 @@ body.twoColElsLtHdr {
   .twoColElsLtHdr #mainContent .jm-flyer{padding:18px;}
   .twoColElsLtHdr #mainContent .jm-contact{padding:24px;}
 }
+
+/* home page: gap between the three thumbnail images */
+.twoColElsLtHdr #mainContent table.jm-thumbcol td {
+  padding-bottom: 14px !important;
+}
+.twoColElsLtHdr #mainContent table.jm-thumbcol tr:last-child td {
+  padding-bottom: 0 !important;
+}
