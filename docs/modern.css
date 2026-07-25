@@ -381,3 +381,20 @@ body.twoColElsLtHdr {
   .twoColElsLtHdr #mainContent .jm-award { flex-direction:column; gap:2px; }
   .twoColElsLtHdr #mainContent .jm-award .detail { text-align:left; }
 }
+
+/* ================= jules entertainment page ================= */
+.twoColElsLtHdr #mainContent .jm-jules-title { text-align:center; margin-bottom:6px; }
+.twoColElsLtHdr #mainContent .jm-jules-title img { box-shadow:none !important; border-radius:0 !important; max-width:360px !important; }
+.twoColElsLtHdr #mainContent .jm-jules-links { text-align:center; font-size:.95rem; margin-bottom:28px; }
+.twoColElsLtHdr #mainContent .jm-jules-links a { font-weight:600; }
+.twoColElsLtHdr #mainContent .jm-jules-body { max-width:640px; margin:0 auto; }
+.twoColElsLtHdr #mainContent img.jm-jules-icon {
+  float:left; width:100px; height:auto; margin:4px 24px 14px 0 !important;
+  box-shadow:none !important; border-radius:0 !important;
+}
+.twoColElsLtHdr #mainContent .jm-jules-body p { margin:0 0 16px !important; }
+.twoColElsLtHdr #mainContent .jm-jules-cta { clear:none; font-size:1.15rem; font-weight:700; color:var(--ink); margin-top:6px !important; }
+.twoColElsLtHdr #mainContent .jm-jules-cta a { font-weight:700; border-bottom:0; }
+@media (max-width: 560px) {
+  .twoColElsLtHdr #mainContent img.jm-jules-icon { float:none; display:block; margin:0 auto 18px !important; }
+}
