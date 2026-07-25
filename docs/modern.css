@@ -389,12 +389,13 @@ body.twoColElsLtHdr {
 .twoColElsLtHdr #mainContent .jm-jules-links a { font-weight:600; }
 .twoColElsLtHdr #mainContent .jm-jules-body { max-width:640px; margin:0 auto; }
 .twoColElsLtHdr #mainContent img.jm-jules-icon {
-  float:left; width:100px; height:auto; margin:4px 24px 14px 0 !important;
+  float:left !important; width:100px; height:auto; margin:4px 24px 14px 0 !important;
   box-shadow:none !important; border-radius:0 !important;
+  shape-outside: margin-box;
 }
 .twoColElsLtHdr #mainContent .jm-jules-body p { margin:0 0 16px !important; }
 .twoColElsLtHdr #mainContent .jm-jules-cta { clear:none; font-size:1.15rem; font-weight:700; color:var(--ink); margin-top:6px !important; }
 .twoColElsLtHdr #mainContent .jm-jules-cta a { font-weight:700; border-bottom:0; }
-@media (max-width: 560px) {
-  .twoColElsLtHdr #mainContent img.jm-jules-icon { float:none; display:block; margin:0 auto 18px !important; }
+@media (max-width: 420px) {
+  .twoColElsLtHdr #mainContent img.jm-jules-icon { width:72px; margin:4px 14px 10px 0 !important; }
 }
