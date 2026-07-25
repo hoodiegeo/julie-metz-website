@@ -338,3 +338,46 @@ body.twoColElsLtHdr {
 .twoColElsLtHdr #mainContent table.jm-thumbcol tr:last-child td {
   padding-bottom: 0 !important;
 }
+
+/* ================= resume detail pages ================= */
+.twoColElsLtHdr #mainContent .jm-resume { max-width: 760px; margin: 0 auto; text-align: left; }
+.twoColElsLtHdr #mainContent .jm-resume-back { display:inline-block; margin-bottom:18px; font-size:.85rem; color:var(--gold-dark) !important; border:0 !important; }
+.twoColElsLtHdr #mainContent .jm-resume-head { text-align:center; margin-bottom: 10px; }
+.twoColElsLtHdr #mainContent .jm-resume-head .jm-eyebrow { font-family:"Inter",sans-serif; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-dark); font-weight:600; margin-bottom:6px; }
+.twoColElsLtHdr #mainContent .jm-resume-head h1 { margin-bottom:.15em !important; }
+.twoColElsLtHdr #mainContent .jm-resume-contact { text-align:center; color:var(--muted); font-size:.95rem; margin-bottom:8px; }
+.twoColElsLtHdr #mainContent .jm-resume-contact a { color:var(--muted) !important; border-bottom-color:var(--line); }
+.twoColElsLtHdr #mainContent img.jm-resume-portrait { display:block !important; float:none !important; margin:0 auto 26px !important; max-width:150px; border-radius:10px; box-shadow:var(--shadow-sm); }
+
+.twoColElsLtHdr #mainContent .jm-resume section { margin-bottom: 30px; }
+.twoColElsLtHdr #mainContent .jm-resume section > h2 {
+  font-family:"Inter",sans-serif !important; color:var(--gold-dark) !important; font-weight:600 !important;
+  font-size:.78rem !important; letter-spacing:.12em; text-transform:uppercase;
+  border-bottom:1px solid var(--line); padding-bottom:8px; margin:0 0 16px !important;
+}
+.twoColElsLtHdr #mainContent .jm-resume ul.jm-bullets { list-style:none; padding-left:0; margin:6px 0 0; }
+.twoColElsLtHdr #mainContent .jm-resume ul.jm-bullets li {
+  position:relative; padding-left:18px; margin:.3em 0; line-height:1.55;
+}
+.twoColElsLtHdr #mainContent .jm-resume ul.jm-bullets li::before {
+  content:"\2022"; position:absolute; left:2px; color:var(--gold);
+}
+.twoColElsLtHdr #mainContent .jm-resume .jm-entry { margin: 0 0 18px; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-entry:last-child { margin-bottom:0; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-entry .role {
+  font-family:"Cormorant Garamond",serif; color:var(--blue); font-weight:600; font-size:1.15rem; margin:0;
+}
+.twoColElsLtHdr #mainContent .jm-resume .jm-entry .venue { font-style:italic; color:var(--muted); font-size:.92rem; margin:2px 0 6px; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-entry .meta { color:var(--muted); font-size:.92rem; margin:2px 0 6px; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-line { margin:2px 0; line-height:1.5; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-line strong { color:var(--ink); }
+
+.twoColElsLtHdr #mainContent .jm-resume .jm-award { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:10px 0; border-bottom:1px dashed var(--line); }
+.twoColElsLtHdr #mainContent .jm-resume .jm-award:last-child { border-bottom:0; }
+.twoColElsLtHdr #mainContent .jm-resume .jm-award .name { font-weight:600; color:var(--ink); }
+.twoColElsLtHdr #mainContent .jm-resume .jm-award .detail { color:var(--muted); text-align:right; }
+
+@media (max-width: 600px) {
+  .twoColElsLtHdr #mainContent .jm-award { flex-direction:column; gap:2px; }
+  .twoColElsLtHdr #mainContent .jm-award .detail { text-align:left; }
+}
