@@ -251,6 +251,21 @@ body.twoColElsLtHdr {
   margin: 0 !important;
   line-height: 1.7;
 }
+
+.twoColElsLtHdr #footer .jm-admin-link {
+  display: inline-block;
+  margin-top: 9px;
+  color: #8b8373 !important;
+  border-bottom: 1px solid rgba(139,131,115,.35) !important;
+  font: 500 11px/1.4 "Inter", sans-serif !important;
+  letter-spacing: .04em;
+  text-decoration: none !important;
+}
+
+.twoColElsLtHdr #footer .jm-admin-link:hover {
+  color: var(--gold-dark) !important;
+  border-bottom-color: var(--gold-dark) !important;
+}
 .twoColElsLtHdr #footer a {
   color: var(--gold-dark) !important;
   text-decoration: none;

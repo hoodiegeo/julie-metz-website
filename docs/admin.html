@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Julie Metz | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+  <div class="admin-shell">
+    <header class="admin-brand">
+      <a href="index.html" aria-label="Return to Julie Metz home page"></a>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-login" id="adminLogin">
+        <p class="admin-eyebrow">Private area</p>
+        <h1 class="admin-title">Admin login</h1>
+        <p class="admin-subtitle">Sign in to see a simple overview of visits to Julie’s website.</p>
+
+        <form class="admin-form" id="adminLoginForm">
+          <div class="admin-field">
+            <label for="adminUsername">Username</label>
+            <input id="adminUsername" name="username" type="text" autocomplete="username" required>
+          </div>
+          <div class="admin-field">
+            <label for="adminPassword">Password</label>
+            <input id="adminPassword" name="password" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="admin-button" type="submit">Sign in</button>
+          <p class="admin-message" id="adminMessage" aria-live="polite"></p>
+        </form>
+
+        <p class="admin-hint"><strong>Temporary login:</strong> username <code>julie</code>, password <code>changeme2026</code>. This placeholder login is for setup only.</p>
+      </section>
+
+      <section class="admin-dashboard" id="adminDashboard" hidden>
+        <div class="admin-dashboard-head">
+          <div>
+            <p class="admin-eyebrow">Website overview</p>
+            <h1 class="admin-title">Visitor dashboard</h1>
+          </div>
+          <button class="admin-button secondary" id="adminLogout" type="button">Sign out</button>
+        </div>
+
+        <div class="admin-status" id="adminStatus">
+          <span class="admin-status-dot" aria-hidden="true"></span>
+          <div id="adminStatusText">Loading analytics…</div>
+        </div>
+
+        <div class="admin-metrics">
+          <article class="admin-metric primary">
+            <span class="admin-metric-label">All site views</span>
+            <strong class="admin-metric-value" id="adminTotal">—</strong>
+            <span class="admin-metric-note">Since visitor tracking began</span>
+          </article>
+          <article class="admin-metric">
+            <span class="admin-metric-label">Home page views</span>
+            <strong class="admin-metric-value" id="adminHome">—</strong>
+            <span class="admin-metric-note">Visits to the home page</span>
+          </article>
+          <article class="admin-metric">
+            <span class="admin-metric-label">Most viewed page</span>
+            <strong class="admin-metric-value" id="adminTop">—</strong>
+            <span class="admin-metric-note">Based on tracked page totals</span>
+          </article>
+        </div>
+
+        <section class="admin-panel">
+          <div class="admin-panel-head">
+            <h2>Views by page</h2>
+            <small>All-time totals</small>
+          </div>
+          <table class="admin-table">
+            <thead><tr><th>Page</th><th>Views</th></tr></thead>
+            <tbody id="adminPageRows">
+              <tr><td colspan="2" class="admin-empty">Loading page totals…</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <footer class="admin-footer">
+      <a href="index.html">Return to the website</a>
+    </footer>
+  </div>
+
+  <script src="analytics-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
