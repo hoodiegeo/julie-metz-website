@@ -10,5 +10,5 @@
  * the site code is "julielmetz".
  */
 window.JULIE_ANALYTICS = {
-  goatcounterCode: ""
+  goatcounterCode: "juliemetz"
 };
