@@ -132,16 +132,6 @@ body.admin-page {
   font-size: .86rem;
 }
 
-.admin-hint {
-  margin: 16px 0 0;
-  padding: 12px 14px;
-  border-left: 3px solid var(--admin-gold);
-  color: var(--admin-muted);
-  background: var(--admin-cream);
-  font-size: .82rem;
-  line-height: 1.55;
-}
-
 .admin-dashboard[hidden], .admin-login[hidden] { display: none; }
 
 .admin-dashboard-head {
