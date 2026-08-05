@@ -3,7 +3,7 @@
 
   /* Placeholder credentials only. Change these before treating login as secure. */
   var PLACEHOLDER_USER = "julie";
-  var PLACEHOLDER_PASSWORD = "changeme2026";
+  var PLACEHOLDER_PASSWORD = "Julie1";
   var AUTH_KEY = "julie_admin_preview_auth";
   var TRACKED_PAGES = [
     ["Home", "/"],
